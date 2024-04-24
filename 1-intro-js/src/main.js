@@ -1,8 +1,8 @@
-let firstName = "Gustavo"
+let firstName = "Gustavo";
 
-firstName = "César"
+firstName = "César";
 
-const lastName = "Guerra"
+const lastName = "Guerra";
 
 const condition = true;
 
@@ -11,4 +11,5 @@ if (condition) {
   console.log(lastName)
 }
 
-console.log("Hola, mundo!" + firstName + ' ' + lastName)
+console.log(`Hola, mundo!
+${firstName} - ${lastName}`);
