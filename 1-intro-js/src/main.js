@@ -1,15 +1,9 @@
-let firstName = "Gustavo";
+function obtenerInfo(name = "César", apellido = "Guerra") {
+  const info = `${name} ${apellido}`;
 
-firstName = "César";
-
-const lastName = "Guerra";
-
-const condition = true;
-
-if (condition) {
-  const lastName = "González"
-  console.log(lastName)
+  return info;
 }
 
-console.log(`Hola, mundo!
-${firstName} - ${lastName}`);
+const info = obtenerInfo("Alex", "González");
+
+console.log(info)
