@@ -1,12 +1,5 @@
-const carro = {
-    marca: "Seat",
-    modelo: "Fr",
-    anio: "2018",
-    nombre: "Leon"
-}
+const alumnos = ["monse", "mau", "gustavo", "jose", "barbara", "juan"];
 
-const detalle = ({ marca, modelo, nombre }) => {
-    console.log(`El vehiculo de la marca ${marca} es modelo ${modelo} y su nombre es ${nombre}`);
-}
+const [nom1, nom2, nom3, ...nombres] = alumnos;
 
-detalle(carro)
+console.log(nom1, nom2, nom3, nombres);
