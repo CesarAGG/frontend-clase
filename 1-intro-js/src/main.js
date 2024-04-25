@@ -1,18 +1,21 @@
-const promedio = 7.0;
+const carros = ["Ferrari", "Nissan GTR", "Porsche", "McLaren", "Mercedes GLC"];
 
-let resultado = '';
+carros.push("Mustang GT500", "Challenger", "Camaro");
 
-resultado = (promedio >= 7.0) ? "Aprobado" : "Reprobado";
+// console.log(carros);
 
-console.log(resultado)
+const num = [10, 5, 6, 12, 22];
+num.push(332, 532, 545)
 
-let valorMaximo = 0;
+// console.log(num);
 
-const a = 4;
-const b = 6;
-const c = 3;
+carros.forEach(carro => console.log(carro));
 
-valorMaximo = a > b ? a : b;
-valorMaximo = valorMaximo > c ? valorMaximo : c;
+for (const carro of carros) {
+  console.log(carro);
+}
 
-console.log(valorMaximo);
+for (let i = 0; i < carros.length; i++) {
+  const elem = carros[i]
+  console.log(i + elem);
+}
