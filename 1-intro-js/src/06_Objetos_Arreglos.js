@@ -47,14 +47,4 @@ console.log(carro);
 
 const salu = carro.saludo();
 console.log(salu);
-console.log(carro.totalInventario());
-
-const carro2 = { ...carro };
-
-const valida = carro2 === carro;
-
-console.log(valida);
-
-carro2.id = 20;
-console.log(carro.id);
-console.log(carro2.id);
+console.log(carro.totalInventario())
