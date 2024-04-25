@@ -1,11 +1,13 @@
-const carros = ["Ferrari", "Nissan", "Porsche", "McLaren", "Mercedes"];
+const carro = {
+    marca: "Seat",
+    modelo: "Fr",
+    anio: "2018",
+    nombre: "Leon"
+}
 
-const carros2 = carros.concat("Mustang GT500", "Challenger", "Camaro");
+// const marca = carro.marca;
 
-const motos = ["Italika", "Chopper", "Ninja", "SuperSport"];
+const { marca, modelo, nombre } = carro;
 
-const tienda = [...carros, ...motos, "Rin 18"];
-const tienda2 = motos.concat(carros).concat("Rin 18");
-
-console.log(carros2);
-console.log(tienda2);
+console.log(marca);
+console.log(nombre);
