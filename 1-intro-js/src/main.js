@@ -2,10 +2,21 @@ const carro = {
   id: 1,
   nombre: "LaFerrari",
   date: new Date(),
-  marca: "Ferrari",
-  costo: 10000000
+  marca: {
+    id: 1,
+    nombre: "Ferrari",
+    ubicacion: "Europa",
+    edad: 100
+  },
+  costo: 10000000,
+  saludo: function () {
+    return `Hola ${this.marca.nombre} ${this.nombre}`;
+  }
 }
 
-carro.nombre = "F40";
-carro.costo = 15000000
-console.log(carro.nombre, carro.costo);
+// carro.nombre = "F40";
+carro.costo = 15000000;
+console.log(carro);
+
+const salu = carro.saludo();
+console.log(salu);
