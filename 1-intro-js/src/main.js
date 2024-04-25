@@ -1,9 +1,11 @@
-function obtenerInfo(name = "César", apellido = "Guerra") {
-  const info = `${name} ${apellido}`;
-
-  return info;
+const carro = {
+  id: 1,
+  nombre: "LaFerrari",
+  date: new Date(),
+  marca: "Ferrari",
+  costo: 10000000
 }
 
-const info = obtenerInfo("Alex", "González");
-
-console.log(info)
+carro.nombre = "F40";
+carro.costo = 15000000
+console.log(carro.nombre, carro.costo);
